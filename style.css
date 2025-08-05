@@ -1,0 +1,92 @@
+.navbar{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(34, 31, 31);
+    position:fixed;
+}
+.navbar li{
+     display: inline-block;
+}
+
+.navbar li a{
+    color: azure;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 20px;
+}
+.navbar li a:hover{
+    color: rgb(233, 227, 227);
+    background-color: green;
+    box-shadow:  0 6px 12px rgba(132, 240, 8, 0.15);
+}
+.img{
+    position: relative;
+    display: inline-block;
+}
+.img img {
+    padding: 50px;
+    width: 500px;
+    height: 250px;
+    display: block;
+
+}
+
+.abs{
+    position: absolute;
+    bottom: 50px; 
+    right: 70px; 
+    color: rgb(196, 184, 184);
+    z-index: 1;
+}
+ .block1, .block2 {
+    display: flex;
+    gap: 20px ;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+ .img2 {
+    width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.droptn{
+    background-color: rgb(0, 0, 8);
+    color: brown;
+    padding: 20px;
+    font-size: 20px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.content{
+    position: absolute;
+    width: 900px;
+    display: none;
+    background-color: rgb(0, 0, 0);
+    min-width: 100px;
+    z-index: 1;
+   
+}
+.content a{
+    color: rgb(236, 236, 236);
+    padding: 20px;
+    display: block;
+    font-style: none;
+    text-decoration: none;
+}
+.content a:hover{
+    background-color: rgb(235, 14, 14);
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover .droptn{
+    background-color: rgb(231, 2, 2);
+}
